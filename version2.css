@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #1A237E;       /* Xanh Indigo đậm - Chuyên nghiệp, vững chắc */
+    --darker-primary: #0D47A1;      /* Xanh chàm đậm cho Hover */
+    --secondary-color: #F0F4F8;    /* Xanh xám nhạt tối giản */
+    --accent-color: #FF6D00;       /* Cam rực rỡ tương phản mạnh với Xanh */
+    --bg-light: #E0E6ED;           /* Nền trang xám lạnh */
+    --card-bg: #FFFFFF; 
+    --text-body: #102A43;          /* Chữ xanh đen đậm chuẩn tương phản WCAG */
+    --footer-bg: #0F172A;          /* Footer màu tối Slate */
+}
+
+body.bg-custom-light { background-color: var(--bg-light); }
+.main-content-bg { background-color: var(--card-bg); }
+
+.primary-bg { background-color: var(--primary-color); }
+.secondary-bg { background-color: var(--secondary-color); }
+.accent-bg { background-color: var(--accent-color); }
+.footer-bg { background-color: var(--footer-bg); }
+
+.text-primary-color { color: var(--primary-color); }
+.text-custom-body { color: var(--text-body); }
+.text-custom-dark { color: #102A43; }
+.text-custom-footer { color: #F8FAFC; }
+.text-custom-footer-sub { color: #94A3B8; }
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary);
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}

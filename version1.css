@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #00A86B;       /* Xanh ngọc bích tươi - Nổi bật, tin cậy */
+    --darker-primary: #008F5B;      /* Xanh ngọc đậm cho trạng thái Hover */
+    --secondary-color: #E8F5E9;    /* Xanh lá rất nhạt cho nền khối tính năng */
+    --accent-color: #FFB300;       /* Vàng chanh làm điểm nhấn thu hút */
+    --bg-light: #F4F7F6;           /* Nền trang xám nhạt dịu mắt */
+    --card-bg: #FFFFFF;            /* Nền thẻ chính trắng sạch */
+    --text-body: #2C3E50;          /* Chữ xanh đen đậm - Đảm bảo độ tương phản */
+    --footer-bg: #1B4D3E;          /* Nền Footer xanh lá đậm */
+}
+
+body.bg-custom-light { background-color: var(--bg-light); }
+.main-content-bg { background-color: var(--card-bg); }
+
+.primary-bg { background-color: var(--primary-color); }
+.secondary-bg { background-color: var(--secondary-color); }
+.accent-bg { background-color: var(--accent-color); }
+.footer-bg { background-color: var(--footer-bg); }
+
+.text-primary-color { color: var(--primary-color); }
+.text-custom-body { color: var(--text-body); }
+.text-custom-dark { color: #1B4D3E; }
+.text-custom-footer { color: #FFFFFF; }
+.text-custom-footer-sub { color: #A3E4D7; }
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary);
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}
